@@ -66,7 +66,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem.ps5": {
-      "version": "file:D:/Downloads/com.unity.inputsystem.ps5-1.0.2/package",
+      "version": "file:com.unity.inputsystem.ps5-1.0.2/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -74,7 +74,7 @@
       }
     },
     "com.unity.inputsystem.switch": {
-      "version": "file:D:/Unity6000.3.12_LTS-NXAddon21.4.0-Unity6.3/UnityForNintendoSwitch/Packages/com.unity.inputsystem.switch@1.0.0",
+      "version": "file:com.unity.inputsystem.switch@1.0.0/package",
       "depth": 0,
       "source": "local",
       "dependencies": {
