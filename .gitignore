@@ -14,6 +14,8 @@
 /[Mm]emoryCaptures/
 /[Ss]witchIL2CPPCache/
 /[Aa]ssets/[Nn]intendoSDKPlugin/
+/[Aa]ssets/[Aa]ddressableAssetsData/[Pp]S5/
+/[Aa]ssets/[Aa]ddressableAssetsData/[Ss]witch/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -66,3 +68,4 @@ crashlytics-build.properties
 # Editor Crash Files
 *.blob
 
+/[Uu]serSettings/

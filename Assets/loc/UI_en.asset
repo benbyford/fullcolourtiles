@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ca6df990d1c124fcc99da5fcd40463ee, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9230606336
+    m_Localized: CREDITS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 907612774400
+    m_Localized: SCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3812008910848
+    m_Localized: CLEAR DATA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3881512722432
+    m_Localized: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3952979468288
+    m_Localized: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4057925148672
+    m_Localized: We are working on new levels. Please update the game when available.
+      Thank you for playing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4114913157120
+    m_Localized: Delete progress data?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4202423115776
+    m_Localized: 'A GAME BY:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4263945166848
+    m_Localized: 'SOUND DESIGN BY:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4284346261504
+    m_Localized: 'THANKS TO:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4313521840128
+    m_Localized: 'QUALITY ASSURANCE BY:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4347432787968
+    m_Localized: 'LOCALISATION BY:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252818265989120
+    m_Localized: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24868426336952320
+    m_Localized: THANK YOU FOR PLAYING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271221784782622720
+    m_Localized: 'PORTING / QA / DEVELOPMENT SUPPORT BY:'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

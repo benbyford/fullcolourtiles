@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: ca6df990d1c124fcc99da5fcd40463ee, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 9230606336
+    m_Localized: "CR\xC9DITOS"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 907612774400
+    m_Localized: PUNTAJE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3812008910848
+    m_Localized: BORRAR DATOS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3881512722432
+    m_Localized: ABANDONAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3952979468288
+    m_Localized: IDIOMA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4057925148672
+    m_Localized: "Estamos trabajando en nuevos niveles. Actualice el juego cuando
+      est\xE9 disponible. Gracias por jugar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4114913157120
+    m_Localized: "\xBFEliminar datos de progreso?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4202423115776
+    m_Localized: 'UN JUEGO DE:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4263945166848
+    m_Localized: "DISE\xD1O DE SONIDO POR:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4284346261504
+    m_Localized: 'GRACIAS A:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4313521840128
+    m_Localized: "GARANT\xCDA DE CALIDAD POR:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4347432787968
+    m_Localized: "LOCALIZACI\xD3N POR:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252818265989120
+    m_Localized: ABANDONAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24868426336952320
+    m_Localized: GRACIAS POR JUGAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271221784782622720
+    m_Localized: "APOYO PARA LA ADAPTACI\xD3N / CONTROL DE CALIDAD / DESARROLLO POR:"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

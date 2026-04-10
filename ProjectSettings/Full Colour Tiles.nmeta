@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NintendoSdkMeta>
+  <Core>
+    <Name>Application</Name>
+    <ApplicationId>0x01004b9000490000</ApplicationId>
+    <ProgramIndex>0</ProgramIndex>
+    <MainThreadStackSize>0x00100000</MainThreadStackSize>
+    <ProcessAddressSpace>AddressSpace64Bit</ProcessAddressSpace>
+    <SystemResourceSize>0x01000000</SystemResourceSize>
+    <Is64BitInstruction>True</Is64BitInstruction>
+  </Core>
+  <Application>
+    <Title>
+      <Name>Full Colour Tiles</Name>
+      <Language>AmericanEnglish</Language>
+      <Publisher>Technology and Creativity</Publisher>
+    </Title>
+    <Icon>
+      <IconPath>D:\Unity2023.1.22_TECH-NXAddon16.2.0\NintendoSDK\Resources\SpecFiles\NintendoSDK_Application.bmp</IconPath>
+      <Language>AmericanEnglish</Language>
+    </Icon>
+    <ReleaseVersion>0</ReleaseVersion>
+    <DisplayVersion>1.1.17</DisplayVersion>
+    <StartupUserAccount>Required</StartupUserAccount>
+    <UserAccountSwitchLock>Disable</UserAccountSwitchLock>
+    <SupportedLanguage>AmericanEnglish</SupportedLanguage>
+    <PresenceGroupId>0x0005000C10000001</PresenceGroupId>
+    <Screenshot>Allow</Screenshot>
+    <DataLossConfirmation>None</DataLossConfirmation>
+    <UserAccountSaveDataSize>0x000000000000C000</UserAccountSaveDataSize>
+    <UserAccountSaveDataJournalSize>0x000000000000C000</UserAccountSaveDataJournalSize>
+    <ApplicationErrorCodeCategory />
+    <LogoType>LicensedByNintendo</LogoType>
+    <LogoHandling>Auto</LogoHandling>
+    <VideoCapture>Enable</VideoCapture>
+    <LocalCommunicationId>0x0005000C10000001</LocalCommunicationId>
+    <RuntimeAddOnContentInstall>Deny</RuntimeAddOnContentInstall>
+    <CrashReport>Allow</CrashReport>
+    <CrashScreenshotForProd>Allow</CrashScreenshotForProd>
+    <CrashScreenshotForDev>Deny</CrashScreenshotForDev>
+    <PlayLogQueryCapability>None</PlayLogQueryCapability>
+    <RuntimeParameterDelivery>Always</RuntimeParameterDelivery>
+    <PlayLogPolicy>Open</PlayLogPolicy>
+    <ContentsAvailabilityTransitionPolicy>Stable</ContentsAvailabilityTransitionPolicy>
+  </Application>
+  <CardSpec>
+    <Size>4</Size>
+    <ClockRate>25</ClockRate>
+  </CardSpec>
+</NintendoSdkMeta>

@@ -1,0 +1,13 @@
+Key,Id,English(en),Chinese (Simplified)(zh),Russian(ru),Spanish(es),Portuguese(pt),German(de),Japanese(ja),French(fr),Korean(ko)
+CREDITSBUTTON,9230606336,CREDITS,学分,КРЕДИТЫ,CRÉDITOS,CRÉDITOS,KREDITE,クレジット,CRÉDITS,크레딧
+SCORE,907612774400,SCORE,分数,СЧЕТ,PUNTAJE,PONTUAÇÃO,PUNKTZAHL,スコア,SCORE,점수
+CLEARBUTTON,3812008910848,CLEAR DATA,清除数据,ОЧИСТИТЬ ДАННЫЕ,BORRAR DATOS,APAGAR OS DADOS,DATEN LÖSCHEN,データのクリア,EFFACER LES DONNÉES,데이터 지우기
+MOREBUTTON,3881512722432,QUIT,辞职,ПОКИДАТЬ,ABANDONAR,DESISTIR,AUFHÖREN,やめる,QUITTER,그만두다
+LANG,3952979468288,LANGUAGE,语言,ЯЗЫК,IDIOMA,LINGUAGEM,SPRACHE,言語,LANGUE,언어
+MOREDESC,4057925148672,We are working on new levels. Please update the game when available. Thank you for playing.,我们正在新的水平上努力。请在可用时更新游戏。谢谢你来玩。,"Мы работаем на новом уровне. Пожалуйста, обновите игру, когда она появится. Спасибо за игру.",Estamos trabajando en nuevos niveles. Actualice el juego cuando esté disponible. Gracias por jugar.,Estamos trabalhando em novos níveis. Atualize o jogo quando disponível. Obrigado por jogar.,"Wir arbeiten auf neuen Ebenen. Bitte aktualisieren Sie das Spiel, wenn verfügbar. Danke für das Spiel.",私たちは新たなレベルに取り組んでいます。利用可能になったらゲームを更新してください。プレイしていただきありがとうございます。,Nous travaillons à de nouveaux niveaux. Veuillez mettre à jour le jeu lorsqu'il est disponible. Merci d'avoir joué.,우리는 새로운 차원에서 노력하고 있습니다. 가능한 경우 게임을 업데이트하세요. 플레이해주셔서 감사합니다.
+CLEARQUESTION,4114913157120,Delete progress data?,删除进度数据？,Удалить данные о ходе выполнения?,¿Eliminar datos de progreso?,Excluir dados de progresso?,Fortschrittsdaten löschen?,進行状況データを削除しますか?,Supprimer les données de progression ?,진행 데이터를 삭제하시겠습니까?
+CREDIT1,4202423115776,A GAME BY:,游戏由：,ИГРА ОТ:,UN JUEGO DE:,UM JOGO DE:,EIN SPIEL VON:,ゲームの作者:,UN JEU PAR :,게임 작성자:
+CREDIT2,4263945166848,SOUND DESIGN BY:,声音设计：,ЗВУКОВОЙ ДИЗАЙН:,DISEÑO DE SONIDO POR:,PROJETO DE SOM POR:,SOUNDDESIGN VON:,サウンドデザイン：,CONCEPTION SONORE PAR :,사운드 디자인 작성자:
+CREDIT3,4284346261504,THANKS TO:,谢谢：,БЛАГОДАРЯ:,GRACIAS A:,GRAÇAS A:,DANK AN:,おかげで:,GRÂCE À:,감사합니다:
+CREDIT4,4313521840128,QUALITY ASSURANCE BY:,质量保证：,ГАРАНТИЯ КАЧЕСТВА:,GARANTÍA DE CALIDAD POR:,GARANTIA DE QUALIDADE POR:,QUALITÄTSSICHERUNG DURCH:,品質保証:,ASSURANCE QUALITÉ PAR :,품질 보증:
+CREDIT5,4347432787968,LOCALISATION BY:,本地化：,ЛОКАЛИЗАЦИЯ:,LOCALIZACIÓN POR:,LOCALIZAÇÃO POR:,LOKALISIERUNG DURCH:,ローカリゼーション者:,LOCALISATION PAR :,현지화 방법:

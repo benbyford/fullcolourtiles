@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: ca6df990d1c124fcc99da5fcd40463ee
+  m_Entries:
+  - m_Id: 9230606336
+    m_Key: CREDITSBUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 907612774400
+    m_Key: SCORE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3812008910848
+    m_Key: CLEARBUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3881512722432
+    m_Key: MOREBUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3952979468288
+    m_Key: LANG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4057925148672
+    m_Key: MOREDESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4114913157120
+    m_Key: CLEARQUESTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4202423115776
+    m_Key: CREDIT1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4263945166848
+    m_Key: CREDIT2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4284346261504
+    m_Key: CREDIT3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4313521840128
+    m_Key: CREDIT4
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4347432787968
+    m_Key: CREDIT5
+    m_Metadata:
+      m_Items: []
+  - m_Id: 252818265989120
+    m_Key: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24868426336952320
+    m_Key: THANKYOU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 271221784782622720
+    m_Key: CREDIT6
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7523360408390074378
+  references:
+    version: 2
+    RefIds:
+    - rid: 7523360408390074378
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1710974587690
