@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class langChangeCancel : MonoBehaviour
 {
 
-    public changeLangButton creditsBtn;
+    public changeLangButton changeLangScript;
     public grid grid;
 
     // Use this for initialization
@@ -24,9 +24,9 @@ public class langChangeCancel : MonoBehaviour
         gameObject.transform.parent.gameObject.SetActive(false);
 
         // toggle clear data button
-        creditsBtn.gameObject.SetActive(true);
-        creditsBtn.toggled = true;
-        creditsBtn.Clicked();
+        changeLangScript.gameObject.SetActive(true);
+        changeLangScript.toggled = true;
+        changeLangScript.Clicked();
         grid.changeState(GameState.MAINMENU);
 
         // general button sound

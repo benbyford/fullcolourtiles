@@ -37,7 +37,8 @@ public class clearMenuButton : MonoBehaviour {
 
 			// show home screen
 			gridScript.homeScreen.SetActive(false);
-			gridScript.creditsButton.SetActive(false);
+            gridScript.startButton.SetActive(false);
+            gridScript.creditsButton.SetActive(false);
 			gridScript.showScoreButton.SetActive(false);
 			gridScript.langChangeButton.SetActive(false);
 
@@ -58,7 +59,8 @@ public class clearMenuButton : MonoBehaviour {
 
 			// show home screen
 			gridScript.homeScreen.SetActive(true);
-			gridScript.creditsButton.SetActive(true);
+            gridScript.startButton.SetActive(true);
+            gridScript.creditsButton.SetActive(true);
 			gridScript.showScoreButton.SetActive(true);
 			gridScript.langChangeButton.SetActive(true);
 

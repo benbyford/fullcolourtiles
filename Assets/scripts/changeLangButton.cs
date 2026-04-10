@@ -34,6 +34,7 @@ public class changeLangButton : MonoBehaviour
         {
             toggled = false;
             GameController.homeScreen.SetActive(true);
+            GameController.startButton.SetActive(true);
             GameController.clearButton.SetActive(true);
             GameController.showScoreButton.SetActive(true);
             GameController.creditsButton.SetActive(true);
@@ -49,6 +50,7 @@ public class changeLangButton : MonoBehaviour
         {
             toggled = true;
             GameController.homeScreen.SetActive(false);
+            GameController.startButton.SetActive(false);
             GameController.clearButton.SetActive(false);
             GameController.showScoreButton.SetActive(false);
             GameController.creditsButton.SetActive(false);

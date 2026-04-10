@@ -34,6 +34,7 @@ public class creditsButton : MonoBehaviour {
 			Debug.Log("Toggling menu to show");
 			toggled = false;
 			GameController.homeScreen.SetActive(true);
+			GameController.startButton.SetActive(true);
 			GameController.clearButton.SetActive(true);
 			GameController.showScoreButton.SetActive(true);
 			GameController.langChangeButton.SetActive(true);
@@ -52,7 +53,8 @@ public class creditsButton : MonoBehaviour {
             Debug.Log("Toggling credits to show");
             toggled = true;
 			GameController.homeScreen.SetActive(false);
-			GameController.clearButton.SetActive(false);
+            GameController.startButton.SetActive(false);
+            GameController.clearButton.SetActive(false);
 			GameController.showScoreButton.SetActive(false);
 			GameController.langChangeButton.SetActive(false);
 			gameObject.GetComponent<Button>().interactable = false;
@@ -61,7 +63,6 @@ public class creditsButton : MonoBehaviour {
 			GameController.creditsExitButton.SetActive(true);
             GameController.creditsText.SetActive(true);
 			GameController.titleOverlay.SetActive(true);
-			GameController.startButton.SetActive(true);
 
 			// change text color
 			text.color = textColorToggled;

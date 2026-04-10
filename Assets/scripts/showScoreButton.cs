@@ -38,7 +38,8 @@ public class showScoreButton : MonoBehaviour {
 
 			// show home screen
 			gridScript.homeScreen.SetActive(false);
-			gridScript.creditsButton.SetActive(false);
+            gridScript.startButton.SetActive(false);
+            gridScript.creditsButton.SetActive(false);
 			gridScript.clearButton.SetActive(false);
 			gridScript.langChangeButton.SetActive(false);
 
@@ -60,7 +61,8 @@ public class showScoreButton : MonoBehaviour {
 
 			// show home screen
 			gridScript.homeScreen.SetActive(true);
-			gridScript.creditsButton.SetActive(true);
+            gridScript.startButton.SetActive(true);
+            gridScript.creditsButton.SetActive(true);
 			gridScript.clearButton.SetActive(true);
 			gridScript.langChangeButton.SetActive(true);
 
