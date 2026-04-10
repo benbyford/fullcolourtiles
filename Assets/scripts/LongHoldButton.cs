@@ -111,7 +111,8 @@ public class LongHoldButton : MonoBehaviour, IPointerDownHandler
         if (eventSystem.currentSelectedGameObject.name == "MenuButton") // Same script for both buttons as like 90% of the code will be the same.
         {
             BackToMenu();
-        } else if (eventSystem.currentSelectedGameObject.name == "ReloadButton")
+        } 
+        else if (eventSystem.currentSelectedGameObject.name == "ReloadButton")
         {
             Reload();
         }
@@ -167,7 +168,7 @@ public class LongHoldButton : MonoBehaviour, IPointerDownHandler
         {
             if (!holding) // Break out of the loop if player stops holding the button
                 break;
-            progressBarTime = holdTime * 2;
+            progressBarTime = holdTime / maxTime; // Divide hold time by max time to get a value between 0 and 1 for the progress bar
             progressBar.fillAmount = progressBarTime;
             yield return new WaitForEndOfFrame();
         }
@@ -186,7 +187,7 @@ public class LongHoldButton : MonoBehaviour, IPointerDownHandler
         {
             if (holding) // Break out of the loop if player stops holding the button
                 break;
-            progressBarTime = (holdTime * 2) / 2; // Does a slight jump downwards when the player stops holding the button, might need different maths?
+            progressBarTime = holdTime / maxTime; // Divide hold time by max time to get a value between 0 and 1 for the progress bar
             progressBar.fillAmount = progressBarTime;
             yield return new WaitForEndOfFrame();
         }
