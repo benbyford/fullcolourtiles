@@ -65,6 +65,14 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.inputsystem.gxdk": {
+      "version": "file:com.unity.inputsystem.gxdk-1.0.3/package",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.inputsystem": "1.12.0"
+      }
+    },
     "com.unity.inputsystem.ps5": {
       "version": "file:com.unity.inputsystem.ps5-1.0.2/package",
       "depth": 0,

@@ -1,46 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <NintendoSdkMeta>
   <Core>
     <Name>Application</Name>
+    <Is64BitInstruction>True</Is64BitInstruction>
     <ApplicationId>0x01004b9000490000</ApplicationId>
     <ProgramIndex>0</ProgramIndex>
     <MainThreadStackSize>0x00100000</MainThreadStackSize>
     <ProcessAddressSpace>AddressSpace64Bit</ProcessAddressSpace>
     <SystemResourceSize>0x01000000</SystemResourceSize>
-    <Is64BitInstruction>True</Is64BitInstruction>
   </Core>
   <Application>
     <Title>
+      <Language>BritishEnglish</Language>
       <Name>Full Colour Tiles</Name>
-      <Language>AmericanEnglish</Language>
       <Publisher>Technology and Creativity</Publisher>
     </Title>
     <Icon>
-      <IconPath>D:\Unity2023.1.22_TECH-NXAddon16.2.0\NintendoSDK\Resources\SpecFiles\NintendoSDK_Application.bmp</IconPath>
-      <Language>AmericanEnglish</Language>
+      <Language>BritishEnglish</Language>
+      <IconPath>..\..\..\Unity2023.1.22_TECH-NXAddon16.2.0\NintendoSDK\Resources\SpecFiles\NintendoSDK_Application.bmp</IconPath>
     </Icon>
     <ReleaseVersion>0</ReleaseVersion>
-    <DisplayVersion>1.1.17</DisplayVersion>
+    <DisplayVersion>1.0.0</DisplayVersion>
     <StartupUserAccount>Required</StartupUserAccount>
-    <UserAccountSwitchLock>Disable</UserAccountSwitchLock>
+    <UserAccountSwitchLock>Enable</UserAccountSwitchLock>
     <SupportedLanguage>AmericanEnglish</SupportedLanguage>
-    <PresenceGroupId>0x0005000C10000001</PresenceGroupId>
+    <SupportedLanguage>Japanese</SupportedLanguage>
+    <SupportedLanguage>SimplifiedChinese</SupportedLanguage>
+    <SupportedLanguage>Korean</SupportedLanguage>
+    <SupportedLanguage>BritishEnglish</SupportedLanguage>
+    <SupportedLanguage>French</SupportedLanguage>
+    <SupportedLanguage>German</SupportedLanguage>
+    <SupportedLanguage>Spanish</SupportedLanguage>
+    <SupportedLanguage>Portuguese</SupportedLanguage>
+    <SupportedLanguage>Russian</SupportedLanguage>
+    <PresenceGroupId>0x0005000c10000001</PresenceGroupId>
     <Screenshot>Allow</Screenshot>
     <DataLossConfirmation>None</DataLossConfirmation>
-    <UserAccountSaveDataSize>0x000000000000C000</UserAccountSaveDataSize>
-    <UserAccountSaveDataJournalSize>0x000000000000C000</UserAccountSaveDataJournalSize>
-    <ApplicationErrorCodeCategory />
+    <UserAccountSaveDataSize>0x000000000000c000</UserAccountSaveDataSize>
+    <UserAccountSaveDataJournalSize>0x000000000000c000</UserAccountSaveDataJournalSize>
     <LogoType>LicensedByNintendo</LogoType>
     <LogoHandling>Auto</LogoHandling>
+    <LocalCommunicationId>0x0005000c10000001</LocalCommunicationId>
     <VideoCapture>Enable</VideoCapture>
-    <LocalCommunicationId>0x0005000C10000001</LocalCommunicationId>
     <RuntimeAddOnContentInstall>Deny</RuntimeAddOnContentInstall>
     <CrashReport>Allow</CrashReport>
     <CrashScreenshotForProd>Allow</CrashScreenshotForProd>
     <CrashScreenshotForDev>Deny</CrashScreenshotForDev>
     <PlayLogQueryCapability>None</PlayLogQueryCapability>
-    <RuntimeParameterDelivery>Always</RuntimeParameterDelivery>
     <PlayLogPolicy>Open</PlayLogPolicy>
+    <RuntimeParameterDelivery>Always</RuntimeParameterDelivery>
     <ContentsAvailabilityTransitionPolicy>Stable</ContentsAvailabilityTransitionPolicy>
   </Application>
   <CardSpec>

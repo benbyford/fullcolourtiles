@@ -983,7 +983,7 @@ public class grid : MonoBehaviour {
 		return starStatsCount;
 	}
 	void sendAnalytics(String eventName, int goldCount, int silverCount, int bronzeCount){
-#if !UNITY_SWITCH && !UNITY_PS5
+#if !UNITY_SWITCH && !UNITY_PS5 && !UNITY_GAMECORE_XBOXSERIES && !UNITY_GAMECORE
 		Analytics.CustomEvent(eventName, new Dictionary<string, object>
 			{
 				{ "goldCount", goldCount },
