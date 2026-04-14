@@ -1,22 +1,21 @@
 fileFormatVersion: 2
 guid: 743427ea133e84b2f9af43624207bc72
-timeCreated: 1508492874
-licenseType: Free
 TrueTypeFontImporter:
+  externalObjects: {}
   serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Edmondsans
   fontNames:
-  - Edmondsans
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 625610a87dd1f40d69ec4683eaaadaf5, type: 3}
+  - Edmondsans-Bold
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

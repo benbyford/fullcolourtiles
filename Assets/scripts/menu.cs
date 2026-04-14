@@ -70,13 +70,15 @@ public class menu : MonoBehaviour {
 
 		#if (UNITY_EDITOR)
 		Debug.Log("There are " + levelsCount + " levels");
-		Debug.Log("Last played level pre-close: " + PlayerPrefs.GetInt("lastLevel"));
+		//Debug.Log("Last played level pre-close: " + PlayerPrefs.GetInt("lastLevel"));
 		#endif
 
 		menuPos = menuContainer.GetComponent<RectTransform>();
 
 		// add level buttons to menu
-		setupMenu();
+#if !UNITY_GAMECORE
+		setupMenu(); // If not xbox, run normally - xbox code will run this elsewhere
+#endif
 
 		// move menu off screen by default
 		menuOuterContainer.transform.localPosition = new Vector3(-3000f,menuPos.transform.localPosition.y,0);

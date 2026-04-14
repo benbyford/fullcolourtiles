@@ -3,7 +3,7 @@
   <Core>
     <Name>Application</Name>
     <Is64BitInstruction>True</Is64BitInstruction>
-    <ApplicationId>0x01004b9000490000</ApplicationId>
+    <ApplicationId>0x01002700283ce000</ApplicationId>
     <ProgramIndex>0</ProgramIndex>
     <MainThreadStackSize>0x00100000</MainThreadStackSize>
     <ProcessAddressSpace>AddressSpace64Bit</ProcessAddressSpace>
@@ -17,10 +17,10 @@
     </Title>
     <Icon>
       <Language>BritishEnglish</Language>
-      <IconPath>..\..\..\Unity2023.1.22_TECH-NXAddon16.2.0\NintendoSDK\Resources\SpecFiles\NintendoSDK_Application.bmp</IconPath>
+      <IconPath>..\Assets\sprites\app\icon.bmp</IconPath>
     </Icon>
-    <ReleaseVersion>0</ReleaseVersion>
-    <DisplayVersion>1.0.0</DisplayVersion>
+    <ReleaseVersion>1</ReleaseVersion>
+    <DisplayVersion>1.2</DisplayVersion>
     <StartupUserAccount>Required</StartupUserAccount>
     <UserAccountSwitchLock>Enable</UserAccountSwitchLock>
     <SupportedLanguage>AmericanEnglish</SupportedLanguage>
@@ -33,14 +33,14 @@
     <SupportedLanguage>Spanish</SupportedLanguage>
     <SupportedLanguage>Portuguese</SupportedLanguage>
     <SupportedLanguage>Russian</SupportedLanguage>
-    <PresenceGroupId>0x0005000c10000001</PresenceGroupId>
     <Screenshot>Allow</Screenshot>
     <DataLossConfirmation>None</DataLossConfirmation>
     <UserAccountSaveDataSize>0x000000000000c000</UserAccountSaveDataSize>
     <UserAccountSaveDataJournalSize>0x000000000000c000</UserAccountSaveDataJournalSize>
     <LogoType>LicensedByNintendo</LogoType>
     <LogoHandling>Auto</LogoHandling>
-    <LocalCommunicationId>0x0005000c10000001</LocalCommunicationId>
+    <LocalCommunicationId>0x01002700283ce000</LocalCommunicationId>
+    <LegalInformationFilePath>..\legal_info_01002700283ce000_3cb3_hac.zip</LegalInformationFilePath>
     <VideoCapture>Enable</VideoCapture>
     <RuntimeAddOnContentInstall>Deny</RuntimeAddOnContentInstall>
     <CrashReport>Allow</CrashReport>

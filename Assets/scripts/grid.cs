@@ -9,6 +9,11 @@ using UnityEngine.Analytics;
 using UnityEngine.Audio;
 using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
+using PlayerPrefs = UnityEngine.PlayerPrefs;
+#if UNITY_GAMECORE
+using UnityEngine.GameCore;
+using GDKPlayerPrefs = UnityEngine.GameCore.PlayerPrefs;
+#endif
 //using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public enum GameState
@@ -187,9 +192,12 @@ public class grid : MonoBehaviour {
     void Awake(){
 		Application.targetFrameRate = 60;
 #if !UNITY_SWITCH // Switch seems to be unhappy about vsync settings?
-		QualitySettings.vSyncCount = 0;
+		QualitySettings.vSyncCount = 1;
 #endif
-	}
+#if UNITY_GAMECORE
+        StartCoroutine(GDKPlayerPrefs.InitializeAsync(Loading));
+#endif
+    }
 	void Start () {
 
 		// screen
@@ -221,10 +229,13 @@ public class grid : MonoBehaviour {
         result = nn.fs.SaveData.Mount(mountName, userId);
         result.abortUnlessSuccess();
 #endif
-        Debug.Log("[Switch] Initilizing/Loading save data");
+		Debug.Log("[Switch] Initilizing/Loading save data");
+
         InitializeSave();
+#if !UNITY_GAMECORE
 		Loading();
-    }
+#endif
+	}
 	public void changeState(GameState state)
 	{
         gameState = state;
@@ -1087,9 +1098,12 @@ public class grid : MonoBehaviour {
 
         UnityEngine.Switch.PlayerPrefsHelper.rawData = data;
 #endif
+#if UNITY_GAMECORE
+		menu.setupMenu();
+#endif
 
-        // get levels
-        levelsComp = gameObject.GetComponent<levels>();
+		// get levels
+		levelsComp = gameObject.GetComponent<levels>();
         levelCount = levelsComp.getLevelsCount();
         levelStars = levelsComp.getStars();
 
