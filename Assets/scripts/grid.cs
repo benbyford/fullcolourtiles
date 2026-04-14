@@ -329,7 +329,9 @@ public class grid : MonoBehaviour {
 
 		// save last level loaded
 		PlayerPrefs.SetInt("lastLevel", newLevelNo);
-        Saving();
+#if !UNITY_SWITCH
+		Saving();
+#endif
 
         // check to see number of medals
         starStats = getPlayerStarStats();
@@ -343,7 +345,9 @@ public class grid : MonoBehaviour {
             restartButton.SetActive(true);
 
             PlayerPrefs.SetInt("firstTime", 1);
-            Saving();
+#if !UNITY_SWITCH
+			Saving();
+#endif
         }
 
         // if all medals are gold then 100% done
@@ -701,10 +705,11 @@ public class grid : MonoBehaviour {
 
 			// set level score in memory
 			PlayerPrefs.SetInt("level"+Convert.ToString(levelNo), lastRewardInt);
-            Saving();
 
             // update menu
             menu.updateMenu(levelNo,lastRewardInt);
+
+            Saving();
 
             // if gold then vibrate
             // only vibrate if on mobile

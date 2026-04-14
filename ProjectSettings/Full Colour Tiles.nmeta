@@ -19,7 +19,7 @@
       <Language>BritishEnglish</Language>
       <IconPath>..\Assets\sprites\app\icon.bmp</IconPath>
     </Icon>
-    <ReleaseVersion>1</ReleaseVersion>
+    <ReleaseVersion>0</ReleaseVersion>
     <DisplayVersion>1.2</DisplayVersion>
     <StartupUserAccount>Required</StartupUserAccount>
     <UserAccountSwitchLock>Enable</UserAccountSwitchLock>
