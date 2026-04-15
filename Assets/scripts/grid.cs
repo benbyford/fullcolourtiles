@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq.Expressions;
 using System.Net;
 using System.Text;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.Audio;
@@ -177,6 +179,9 @@ public class grid : MonoBehaviour {
 #pragma warning disable 0414
     private nn.fs.FileHandle fileHandle = new();
 #pragma warning restore 0414
+
+	[SerializeField] private float saveTimer = 0f;
+	[SerializeField] private bool triggerSave;
 #endif
 
 
@@ -236,7 +241,43 @@ public class grid : MonoBehaviour {
 		Loading();
 #endif
 	}
-	public void changeState(GameState state)
+
+#if UNITY_SWITCH
+    private void Update()
+    {
+        saveTimer += Time.deltaTime;
+
+
+        if (saveTimer > 15f && triggerSave)
+        {
+            triggerSave = false;
+            saveTimer = 0;
+
+            byte[] data = UnityEngine.Switch.PlayerPrefsHelper.rawData;
+            long saveDataSize = data.LongLength;
+
+            UnityEngine.Switch.Notification.EnterExitRequestHandlingSection();
+
+            nn.Result result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Write);
+            result.abortUnlessSuccess();
+
+            result = nn.fs.File.SetSize(fileHandle, data.LongLength);
+            result.abortUnlessSuccess();
+
+            const int offset = 0;
+            result = nn.fs.File.Write(fileHandle, offset, data, data.LongLength, nn.fs.WriteOption.Flush);
+            result.abortUnlessSuccess();
+
+            nn.fs.File.Close(fileHandle);
+            result = nn.fs.FileSystem.Commit(mountName);
+            result.abortUnlessSuccess();
+
+            UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
+        }
+    }
+#endif
+
+    public void changeState(GameState state)
 	{
         gameState = state;
         uiController.stateChange(gameState);
@@ -329,9 +370,7 @@ public class grid : MonoBehaviour {
 
 		// save last level loaded
 		PlayerPrefs.SetInt("lastLevel", newLevelNo);
-#if !UNITY_SWITCH
 		Saving();
-#endif
 
         // check to see number of medals
         starStats = getPlayerStarStats();
@@ -345,9 +384,7 @@ public class grid : MonoBehaviour {
             restartButton.SetActive(true);
 
             PlayerPrefs.SetInt("firstTime", 1);
-#if !UNITY_SWITCH
 			Saving();
-#endif
         }
 
         // if all medals are gold then 100% done
@@ -1053,28 +1090,8 @@ public class grid : MonoBehaviour {
 		Debug.Log("Saving data");
 
         PlayerPrefs.Save();
-
 #if UNITY_SWITCH
-		byte[] data = UnityEngine.Switch.PlayerPrefsHelper.rawData;
-        long saveDataSize = data.LongLength;
-
-        UnityEngine.Switch.Notification.EnterExitRequestHandlingSection();
-
-        nn.Result result = nn.fs.File.Open(ref fileHandle, filePath, nn.fs.OpenFileMode.Write);
-        result.abortUnlessSuccess();
-
-		result = nn.fs.File.SetSize(fileHandle, data.LongLength);
-        result.abortUnlessSuccess();
-
-        const int offset = 0;
-        result = nn.fs.File.Write(fileHandle, offset, data, data.LongLength, nn.fs.WriteOption.Flush);
-        result.abortUnlessSuccess();
-
-        nn.fs.File.Close(fileHandle);
-        result = nn.fs.FileSystem.Commit(mountName);
-        result.abortUnlessSuccess();
-
-        UnityEngine.Switch.Notification.LeaveExitRequestHandlingSection();
+		triggerSave = true;
 #endif
     }
 
