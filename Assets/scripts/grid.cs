@@ -195,13 +195,24 @@ public class grid : MonoBehaviour {
 
     // this for some reason unknown makes everything run smoothly
     void Awake(){
-		Application.targetFrameRate = 60;
-#if !UNITY_SWITCH // Switch seems to be unhappy about vsync settings?
-		QualitySettings.vSyncCount = 1;
-#endif
+
 #if UNITY_GAMECORE
         StartCoroutine(GDKPlayerPrefs.InitializeAsync(Loading));
 #endif
+
+#if UNITY_STANDALONE || UNITY_EDITOR
+		// if desktop add vsync and drop max fps 
+		QualitySettings.vSyncCount = 1;
+#elif !UNITY_SWITCH
+		// if desktop add vsync and drop max fps
+		QualitySettings.vSyncCount = 1;
+		Application.targetFrameRate = 60;
+#endif 
+
+#if UNITY_SWITCH
+		Application.targetFrameRate = 60;
+#endif
+
     }
 	void Start () {
 
