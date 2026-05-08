@@ -26,7 +26,6 @@
     <SupportedLanguage>AmericanEnglish</SupportedLanguage>
     <SupportedLanguage>Japanese</SupportedLanguage>
     <SupportedLanguage>SimplifiedChinese</SupportedLanguage>
-    <SupportedLanguage>Korean</SupportedLanguage>
     <SupportedLanguage>BritishEnglish</SupportedLanguage>
     <SupportedLanguage>French</SupportedLanguage>
     <SupportedLanguage>German</SupportedLanguage>
@@ -42,6 +41,10 @@
     <LocalCommunicationId>0x01002700283ce000</LocalCommunicationId>
     <Rating>
       <Organization>ACB</Organization>
+      <Age>0</Age>
+    </Rating>
+    <Rating>
+      <Organization>CERO</Organization>
       <Age>0</Age>
     </Rating>
     <Rating>
@@ -81,10 +84,14 @@
       <Age>3</Age>
     </Rating>
     <Rating>
+      <Organization>Russian</Organization>
+      <Age>0</Age>
+    </Rating>
+    <Rating>
       <Organization>USK</Organization>
       <Age>0</Age>
     </Rating>
-    <LegalInformationFilePath>..\legal_info_01002700283ce000_3cb3_hac.zip</LegalInformationFilePath>
+    <LegalInformationFilePath>..\..\..\Dropbox\games\FCT\Nintendo\legal_info_01002700283ce000_3cb3_hac.zip</LegalInformationFilePath>
     <VideoCapture>Enable</VideoCapture>
     <RuntimeAddOnContentInstall>Deny</RuntimeAddOnContentInstall>
     <CrashReport>Allow</CrashReport>
@@ -93,10 +100,11 @@
     <PlayLogQueryCapability>None</PlayLogQueryCapability>
     <PlayLogPolicy>Open</PlayLogPolicy>
     <RuntimeParameterDelivery>Always</RuntimeParameterDelivery>
+    <AppropriateAgeForChina>Age8</AppropriateAgeForChina>
     <ContentsAvailabilityTransitionPolicy>Stable</ContentsAvailabilityTransitionPolicy>
   </Application>
   <CardSpec>
-    <Size>4</Size>
+    <Size>2</Size>
     <ClockRate>25</ClockRate>
   </CardSpec>
 </NintendoSdkMeta>
