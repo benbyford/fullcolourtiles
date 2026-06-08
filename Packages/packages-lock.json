@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.rlabrecque.steamworks.net": {
+      "version": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "cde64110bff012829b59cc16fe2c4fc3a0371e8d"
+    },
     "com.unity.addressables": {
       "version": "2.9.1",
       "depth": 1,
@@ -64,22 +71,6 @@
         "com.unity.modules.uielements": "1.0.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "com.unity.inputsystem.gxdk": {
-      "version": "file:com.unity.inputsystem.gxdk-1.0.3/package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.inputsystem": "1.12.0"
-      }
-    },
-    "com.unity.inputsystem.ps5": {
-      "version": "file:com.unity.inputsystem.ps5-1.0.2/package",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.inputsystem": "1.10.0"
-      }
     },
     "com.unity.inputsystem.switch": {
       "version": "file:com.unity.inputsystem.switch@1.0.0/package",
