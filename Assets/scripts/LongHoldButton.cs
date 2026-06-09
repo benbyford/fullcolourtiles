@@ -16,6 +16,8 @@ public class LongHoldButton : MonoBehaviour, IPointerDownHandler
     [SerializeField] float holdTime;
     [SerializeField] float maxTime;
 
+    int reloads;
+
     [SerializeField] bool holding = false;
     [SerializeField] bool depressing = false;
 
@@ -147,6 +149,13 @@ public class LongHoldButton : MonoBehaviour, IPointerDownHandler
         // only allow click if input allowed
         if (grid.inputAllowed && !grid.isInScene)
         {
+#if !DISABLESTEAMWORKS
+            reloads = PlayerPrefs.GetInt("reloads", reloads);
+            reloads++;
+            SteamStatsAndAchievements.UpdateStats("Reloads", reloads);
+            Debug.Log("Reloads: " + reloads);
+            PlayerPrefs.SetInt("reloads", reloads);
+#endif
 
             grid.restartLevel();
             grid.changeState(GameState.LEVEL);

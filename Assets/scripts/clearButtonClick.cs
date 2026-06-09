@@ -11,6 +11,9 @@ public class clearButtonClick : MonoBehaviour {
 	public clearMenuButton clearMenuBtn;
 	public Animator homeScreenAnimator;
 
+	[SerializeField]
+	private Toggle wipeToggle;
+
 
 	// Use this for initialization
 	void Start () {
@@ -51,5 +54,13 @@ public class clearButtonClick : MonoBehaviour {
 
 		// general button sound
 		gridScript.audioPlayer.playAudioClip(0,1f);
+	}
+
+	public void ClearSteam() // The whole enire checkbox part doesn't show in windows build. Because :shrug:
+	{
+		if (wipeToggle.isOn)
+			Debug.Log("Clearing Steam Achievements");
+		else
+			return;
 	}
 }

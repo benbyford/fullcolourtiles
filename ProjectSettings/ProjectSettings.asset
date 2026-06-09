@@ -927,6 +927,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: 
     Nintendo Switch: UNITY_SWITCH_FIXED_MAX_QUEUED_FRAMES;NN_ACCOUNT_OPENUSER_ENABLE
+    Standalone: STEAMWORKS_NET
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1

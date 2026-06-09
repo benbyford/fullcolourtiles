@@ -51,7 +51,11 @@ public class creditsButton : MonoBehaviour {
 
 		}else{
             Debug.Log("Toggling credits to show");
-            toggled = true;
+#if !DISABLESTEAMWORKS
+            SteamStatsAndAchievements.creditsRead = true;
+#endif
+
+			toggled = true;
 			GameController.homeScreen.SetActive(false);
             GameController.startButton.SetActive(false);
             GameController.clearButton.SetActive(false);

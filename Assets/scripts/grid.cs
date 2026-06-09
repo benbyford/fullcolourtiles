@@ -244,8 +244,8 @@ public class grid : MonoBehaviour {
         Debug.Log("[Switch] Mounting save data");
         result = nn.fs.SaveData.Mount(mountName, userId);
         result.abortUnlessSuccess();
-#endif
 		Debug.Log("[Switch] Initilizing/Loading save data");
+#endif
 
         InitializeSave();
 #if !UNITY_GAMECORE
@@ -401,7 +401,12 @@ public class grid : MonoBehaviour {
         // if all medals are gold then 100% done
         if (starStats.goldCount >= levelCount && hasSeen100percent == 0){
 
-			Debug.Log("Showing 100% screen");
+#if !DISABLESTEAMWORKS
+			SteamStatsAndAchievements.UpdateStats("totalGold", 70);
+#endif
+
+
+            Debug.Log("Showing 100% screen");
 
 			// turn off menu and restart buttons
 			restartButton.SetActive(false);
@@ -850,7 +855,12 @@ public class grid : MonoBehaviour {
 		{
 			Debug.Log("Won level");
 
-            for (var i = 0; i < tiles.Length; i++)
+#if !DISABLESTEAMWORKS
+			if (currentClicks == 30)
+				SteamStatsAndAchievements.closeShave = true;
+#endif
+
+			for (var i = 0; i < tiles.Length; i++)
 			{
 				Debug.Log("Setting Tile: " + tiles[i] + " to false from " + tiles[i].GetComponent<tile_data>().interactable);
 				tiles[i].GetComponent<tile_data>().interactable = false;
@@ -921,7 +931,7 @@ public class grid : MonoBehaviour {
 
 			// check whether max clicks reached
 			if(currentClicks == maxClicks){
-
+				SteamStatsAndAchievements.overflow = true;
 				restartButton.GetComponent<LongHoldButton>().Reload();
 			}
 
@@ -1034,8 +1044,8 @@ public class grid : MonoBehaviour {
 
 			int star = PlayerPrefs.GetInt("level" + Convert.ToString(i));
 
-			if (star == 3) { gold++; }
-			if (star == 2) { silver++; }
+			if (star == 3) { gold++; silver++; bronze++; }
+			if (star == 2) { silver++; bronze++; }
 			if (star == 1) { bronze++; }
 		}
 
@@ -1043,6 +1053,12 @@ public class grid : MonoBehaviour {
 		starStatsCount.goldCount = gold;
 		starStatsCount.silverCount = silver;
 		starStatsCount.bronzeCount = bronze;
+
+#if !DISABLESTEAMWORKS
+		SteamStatsAndAchievements.UpdateStats("totalLevels", starStatsCount.bronzeCount);
+		SteamStatsAndAchievements.UpdateStats("totalSilver", starStatsCount.silverCount);
+		SteamStatsAndAchievements.UpdateStats("totalGold", starStatsCount.goldCount);
+#endif
 
 		return starStatsCount;
 	}
@@ -1237,6 +1253,9 @@ public class grid : MonoBehaviour {
     public void DeleteSave()
 	{
         PlayerPrefs.DeleteAll();
+		starStats.bronzeCount = 0;
+		starStats.silverCount = 0;
+		starStats.goldCount = 0;
 #if UNITY_SWITCH
 		Saving();
 #endif
