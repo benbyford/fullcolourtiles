@@ -77,7 +77,7 @@ public class SteamStatsAndAchievements : MonoBehaviour
     {
         if (!SteamManager.Initialized)
         {
-            Debug.Log("[Update] Steam manager not init");
+            //Debug.Log("[Update] Steam manager not init");
             return;
         }
 
@@ -180,6 +180,12 @@ public class SteamStatsAndAchievements : MonoBehaviour
 
     private void UnlockAchievement(Achievement_t achievement)
     {
+        if (!SteamManager.Initialized)
+        {
+            //Debug.Log("[Update] Steam manager not init");
+            return;
+        }
+
         achievement.m_bAchieved = true;
 
         // the icon may change once it's unlocked
@@ -195,6 +201,13 @@ public class SteamStatsAndAchievements : MonoBehaviour
 
     public static void UpdateStats(string stat, int val)
     {
+
+        if (!SteamManager.Initialized)
+        {
+            //Debug.Log("[Update] Steam manager not init");
+            return;
+        }
+
         if (stat == "Reloads")
         {
             reloads = val;
