@@ -171,7 +171,7 @@ MonoBehaviour:
     - line: '|   loadStoreDebugModeEnabled: 0'
     - line: '|   visionOSBundleVersion: 1.0'
     - line: '|   tvOSBundleVersion: 1.0'
-    - line: '|   bundleVersion: 1.2.0'
+    - line: '|   bundleVersion: 1.2.1'
     - line: '|   preloadedAssets:'
     - line: '|   - {fileID: 11400000, guid: 08076c1edb76c4b758d86441bb654799, type:
         2}'
@@ -955,6 +955,7 @@ MonoBehaviour:
     - line: '|   scriptingDefineSymbols:'
     - line: '|     Android: '
     - line: '|     Nintendo Switch: UNITY_SWITCH_VRKIT;UNITY_SWITCH_FIXED_MAX_QUEUED_FRAMES;NN_ACCOUNT_OPENUSER_ENABLE'
+    - line: '|     Standalone: STEAMWORKS_NET'
     - line: '|   additionalCompilerArguments: {}'
     - line: '|   platformArchitecture:'
     - line: '|     iPhone: 1'
