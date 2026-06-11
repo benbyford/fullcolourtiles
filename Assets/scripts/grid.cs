@@ -936,7 +936,7 @@ public class grid : MonoBehaviour {
 			}
 
 			// check level score min max for medals
-			int starScore = getStarLevel(currentClicks);
+			int starScore = getStarLevel(currentClicks + 1);
 			switch (starScore) {
 			case 3:
 				ClickCounter.GetComponent<Text>().color = textCounterColorGold;
