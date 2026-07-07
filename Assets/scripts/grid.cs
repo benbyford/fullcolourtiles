@@ -931,7 +931,9 @@ public class grid : MonoBehaviour {
 
 			// check whether max clicks reached
 			if(currentClicks == maxClicks){
-				SteamStatsAndAchievements.overflow = true;
+#if !DISABLESTEAMWORKS
+                SteamStatsAndAchievements.overflow = true;
+#endif
 				restartButton.GetComponent<LongHoldButton>().Reload();
 			}
 

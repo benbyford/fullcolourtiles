@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 34d07c6451c0047999647fcbaa0a09f4,
     type: 3}
@@ -172,7 +172,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.NextWorld.Tiles
+    Android: com.TechnologyandCreativity.FullColourTiles
     Standalone: com.NextWorld.Tiles
     Tizen: com.Company.ProductName
     iPhone: com.NextWorld.Tiles
@@ -182,9 +182,9 @@ PlayerSettings:
     VisionOS: 0
     iPhone: 16
     tvOS: 10
-  overrideDefaultApplicationIdentifier: 1
+  overrideDefaultApplicationIdentifier: 0
   AndroidBundleVersionCode: 13
-  AndroidMinSdkVersion: 25
+  AndroidMinSdkVersion: 36
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   AndroidPreferredDataLocation: 1
@@ -275,12 +275,12 @@ PlayerSettings:
   useCustomGradlePropertiesTemplate: 0
   useCustomGradleSettingsTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 2
   AndroidAllowedArchitectures: -1
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: android-keystore.keystore'
-  AndroidKeyaliasName: tiles
+  AndroidKeystoreName: '{inproject}: main.keystore'
+  AndroidKeyaliasName: upload
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
   AndroidBuildApkPerCpuArchitecture: 0
@@ -298,7 +298,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  AndroidMinifyRelease: 0
+  AndroidMinifyRelease: 1
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
@@ -658,7 +658,10 @@ PlayerSettings:
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding: []
-  m_BuildTargetDefaultTextureCompressionFormat: []
+  m_BuildTargetDefaultTextureCompressionFormat:
+  - serializedVersion: 3
+    m_BuildTarget: Android
+    m_Formats: 01000000
   playModeTestRunnerEnabled: 0
   runPlayModeTestAsEditModeTest: 0
   actionOnDotNetUnhandledException: 1
@@ -933,7 +936,7 @@ PlayerSettings:
     iPhone: 1
     tvOS: 1
   scriptingBackend:
-    Android: 0
+    Android: 1
     Standalone: 0
     WebGL: 1
     iPhone: 1

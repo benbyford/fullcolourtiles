@@ -64,12 +64,12 @@ public class creditsButton : MonoBehaviour {
 			gameObject.GetComponent<Button>().interactable = false;
             uiCon.stateChange(GameState.CREDITSMENU);
 
-			GameController.creditsExitButton.SetActive(true);
+            GameController.creditsExitButton.SetActive(true);
             GameController.creditsText.SetActive(true);
 			GameController.titleOverlay.SetActive(true);
 
-			// change text color
-			text.color = textColorToggled;
+            // change text color
+            text.color = textColorToggled;
 
 			// general button sound
 			GameController.audioPlayer.playAudioClip(8);
